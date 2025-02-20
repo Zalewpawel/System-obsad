@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Sedziowanie.Models.Rozgrywki>
+
+@{
+    ViewData["Title"] = "Lista Rozgrywek";
+}
+<style>
+    body {
+        background-image: url('/blok.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+         
+            <th scope="col">Nazwa</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rozgrywki in Model)
+        {
+            <tr>
+               
+                <td>
+                    <a asp-action="MeczeRozgrywek" asp-route-rozgrywkiId="@rozgrywki.Id">
+                        @rozgrywki.Nazwa
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

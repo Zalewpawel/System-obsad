@@ -1,0 +1,58 @@
+﻿@model Sedziowanie.Models.Sedzia
+
+@{
+    ViewData["Title"] = "Dodaj Sędziego";
+}
+
+<style>
+    body {
+        background-image: url('/sedzia.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+<h2>Dodaj Sędziego</h2>
+
+<form asp-action="Add" method="post">
+    <div class="form-group">
+        <label for="Imie">Imię</label>
+        <input type="text" id="Imie" name="Imie" class="form-control" required maxlength="50" />
+    </div>
+
+    <div class="form-group">
+        <label for="Nazwisko">Nazwisko</label>
+        <input type="text" id="Nazwisko" name="Nazwisko" class="form-control" required maxlength="50" />
+    </div>
+
+    <div class="form-group">
+        <label for="Klasa">Klasa</label>
+        <input type="text" id="Klasa" name="Klasa" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Telefon">Telefon</label>
+        <input type="text" id="Telefon" name="Telefon" class="form-control" maxlength="15" />
+    </div>
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" class="form-control" required maxlength="100" />
+    </div>
+
+    
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <button type="submit" class="btn btn-primary">Dodaj</button>
+</form>

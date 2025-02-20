@@ -1,0 +1,33 @@
+﻿@model Sedziowanie.Models.Mecz
+
+@{
+    ViewData["Title"] = "Usuń Mecz";
+}
+<style>
+    body {
+        background-image: url('/blok.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+<h2>Usuń Mecz</h2>
+
+<p style= "color: red;" >Czy na pewno chcesz usunąć mecz numer <strong>@Model.NumerMeczu</strong>?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" id="Id" name="Id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Usuń</button>
+    <a asp-action="ListaMeczy" class="btn btn-secondary">Anuluj</a>
+</form>

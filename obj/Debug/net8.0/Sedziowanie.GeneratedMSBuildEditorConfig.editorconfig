@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Sedziowanie
+build_property.RootNamespace = Sedziowanie
+build_property.ProjectDir = C:\Users\zalew\OneDrive\Pulpit\Sedziowanie\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\zalew\OneDrive\Pulpit\Sedziowanie
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Mecz/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjelxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Mecz/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjelxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Mecz/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjelxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Mecz/ListaMeczy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVjelxMaXN0YU1lY3p5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Niedyspozycja/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmllZHlzcG96eWNqYVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Niedyspozycja/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmllZHlzcG96eWNqYVxTaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Rozgrywki/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm96Z3J5d2tpXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Rozgrywki/ListaRozgrywek.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm96Z3J5d2tpXExpc3RhUm96Z3J5d2VrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Rozgrywki/MeczeRozgrywek.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm96Z3J5d2tpXE1lY3plUm96Z3J5d2VrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Sedzia/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VkemlhXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Sedzia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VkemlhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Sedzia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VkemlhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Sedzia/MeczeSedziego.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VkemlhXE1lY3plU2VkemllZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Sedzia/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VkemlhXFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zalew/OneDrive/Pulpit/Sedziowanie/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zxz7xpf5gr

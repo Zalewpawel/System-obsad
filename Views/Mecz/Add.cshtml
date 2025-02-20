@@ -1,0 +1,101 @@
+﻿@model Mecz
+@using Sedziowanie.Models
+
+<style>
+    body {
+        background-image: url('/tlo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+<h2>Dodaj Mecz</h2>
+
+<form asp-action="Add" method="post">
+    <!-- Numer Meczu -->
+    <div class="form-group">
+        <label for="NumerMeczu">Numer Meczu</label>
+        <input type="text" id="NumerMeczu" name="numerMeczu" class="form-control" required />
+    </div>
+
+    <!-- Data Meczu -->
+    <div class="form-group">
+        <label for="Data">Data Meczu</label>
+        <input type="datetime-local" id="Data" name="data" class="form-control"
+               value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" required />
+    </div>
+
+    <!-- Rozgrywki -->
+    <div class="form-group">
+        <label for="RozgrywkiId">Rozgrywki</label>
+        <select id="RozgrywkiId" name="rozgrywkiId" class="form-control" required>
+            <option value="">-- Wybierz Rozgrywki --</option>
+            @foreach (var rozgrywki in ViewBag.Rozgrywki)
+            {
+                <option value="@rozgrywki.Id">@rozgrywki.Nazwa</option>
+            }
+        </select>
+    </div>
+
+    <!-- Gospodarz -->
+    <div class="form-group">
+        <label for="Gospodarz">Gospodarz</label>
+        <input type="text" id="Gospodarz" name="gospodarz" class="form-control" maxlength="100" required />
+    </div>
+
+    <!-- Gość -->
+    <div class="form-group">
+        <label for="Gosc">Gość</label>
+        <input type="text" id="Gosc" name="gosc" class="form-control" maxlength="100" required />
+    </div>
+
+    <!-- Sedzia I -->
+    <div class="form-group">
+        <label for="SedziaIId">Sędzia I</label>
+        <select id="SedziaIId" name="sedziaIId" class="form-control" required>
+            <option value="">-- Wybierz Sędziego --</option>
+            @foreach (var sedzia in ViewBag.Sedziowie)
+            {
+                <option value="@sedzia.Id">@sedzia.FullName (Klasa: @sedzia.Klasa)</option>
+            }
+        </select>
+    </div>
+
+    <!-- Sedzia II -->
+    <div class="form-group">
+        <label for="SedziaIIId">Sędzia II</label>
+        <select id="SedziaIIId" name="sedziaIIId" class="form-control" required>
+            <option value="">-- Wybierz Sędziego --</option>
+            @foreach (var sedzia in ViewBag.Sedziowie)
+            {
+                <option value="@sedzia.Id">@sedzia.FullName (Klasa: @sedzia.Klasa)</option>
+            }
+        </select>
+    </div>
+
+    <!-- Sedzia Sekretarz -->
+    <div class="form-group">
+        <label for="SedziaSekretarzId">Sędzia Sekretarz</label>
+        <select id="SedziaSekretarzId" name="sedziaSekretarzId" class="form-control" required>
+            <option value="">-- Wybierz Sędziego --</option>
+            @foreach (var sedzia in ViewBag.Sedziowie)
+            {
+                <option value="@sedzia.Id">@sedzia.FullName (Klasa: @sedzia.Klasa)</option>
+            }
+        </select>
+    </div>
+
+    <!-- Przycisk Dodaj Mecz -->
+    <button type="submit" class="btn btn-primary">Dodaj Mecz</button>
+</form>

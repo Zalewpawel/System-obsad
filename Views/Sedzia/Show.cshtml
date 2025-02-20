@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Sedziowanie.Models.Sedzia>
+
+@{
+    ViewData["Title"] = "Lista Sędziów";
+}
+<style>
+    body {
+        background-image: url('/sedzia.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+
+<h2>Lista Sędziów</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Klasa</th>
+            <th>Telefon</th>
+            <th>Email</th>
+            <th>Opcje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sedzia in Model)
+        {
+            <tr>
+                <td>@sedzia.Imie</td>
+                <td>@sedzia.Nazwisko</td>
+                <td>@sedzia.Klasa</td>
+                <td>@sedzia.Telefon</td>
+                <td>@sedzia.Email</td>
+                <td>
+                    <a asp-action="MeczeSedziego" asp-route-sedziaId="@sedzia.Id" class="btn btn-primary">Zobacz Mecze</a>
+                    <a asp-action="Edit" asp-route-id="@sedzia.Id" class="btn btn-warning">Edytuj</a>
+                    <a asp-action="Delete" asp-route-id="@sedzia.Id" class="btn btn-danger">Usuń</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

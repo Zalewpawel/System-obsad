@@ -1,0 +1,67 @@
+﻿@model IEnumerable<dynamic>
+
+
+@{
+    ViewData["Title"] = "Mecze Sędziego";
+    var sedzia = ViewBag.Sedzia;
+}
+
+<style>
+    body {
+        background-image: url('/tlo.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+
+
+<h2>Mecze sędziego: @sedzia</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Numer Meczu</th>
+                <th>Data</th>
+                <th>Gospodarz</th>
+                <th>Gość</th>
+                <th>Rozgrywki</th>
+                <th>Sędzia I</th>
+                <th>Sędzia II</th>
+                <th>Sędzia Sekretarz</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mecz in Model)
+            {
+                <tr>
+                    <td>@mecz.NumerMeczu</td>
+                    <td>@mecz.Data.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>@mecz.Gospodarz</td>
+                    <td>@mecz.Gosc</td>
+                    <td>@mecz.Rozgrywki</td>
+                    <td>@mecz.SedziaI</td>
+                    <td>@mecz.SedziaII</td>
+                    <td>@mecz.SedziaSekretarz</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Brak meczów dla wybranego sędziego.</p>
+}

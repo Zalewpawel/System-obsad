@@ -1,0 +1,36 @@
+﻿@using Sedziowanie.Models
+@model Rozgrywki
+
+@{
+    ViewData["Title"] = "Dodaj Rozgrywki";
+}
+<style>
+    body {
+        background-image: url('/blok.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 10px;
+    }
+</style>
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Add" method="post">
+    <div class="form-group">
+        <label for="Nazwa">Nazwa rozgrywki</label>
+        <input type="text" id="Nazwa" name="Nazwa" class="form-control" required />
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <button type="submit" class="btn btn-primary">Dodaj rozgrywki</button>
+</form>
+
